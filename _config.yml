@@ -1,1 +1,19 @@
-theme: jekyll-theme-minimal
+theme: minima
+
+title: Mob Blog
+description: A blog dedicated to the technological misadventures of Mike Mob.
+url: https://mikemob.com
+author: Mike Mob
+email: mike@mikemob.com
+
+header_pages:
+  - home.md
+  - about.md
+
+defaults:
+  -
+    values:
+      layout: "post"
+
+disqus:
+  shortname: mikemob

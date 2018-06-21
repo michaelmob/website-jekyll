@@ -1,0 +1,76 @@
+main {
+  position: relative;
+  margin: $content-margin;
+  padding: $content-padding;
+  overflow: hidden;
+  color: $text-color;
+  border-radius: $content-border-radius;
+  box-shadow: $content-box-shadow;
+  text-shadow: $text-shadow;
+
+  @media screen and (max-width: $medium-screen) {
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+
+h1 {
+  position: relative;
+  margin: $header-text-margin;
+  cursor: default;
+  font-family: $header-font-family;
+  font-size: $header-font-size;
+  text-align: center;
+
+  @media screen and (max-width: $small-screen) {
+    font-size: $header-font-size-sm;
+  }
+
+  @media screen and (max-width: $extra-small-screen) {
+    font-size: $header-font-size-xs;
+  }
+}
+
+
+ul {
+  display: flex;
+  position: relative;
+  margin: $list-margin;
+  padding: $list-padding;
+  list-style-type: none;
+  font-family: $list-font-family;
+
+  @media screen and (max-width: $small-screen) {
+    flex-direction: column;
+  }
+
+  li {
+    margin: $list-item-margin;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    font-size: $list-item-font-size;
+    font-weight: $list-item-font-weight;
+    transition: $list-item-transition;
+
+    @media screen and (max-width: $small-screen) {
+      margin: $list-item-margin-sm;
+    }
+
+    &:hover {
+      background: $list-item-hover-background;      
+    }
+
+    a {
+      display: block;
+      padding: $list-item-padding;
+      color: $list-item-color;
+      text-decoration: none;
+
+      @media screen and (max-width: $small-screen) {
+        padding: $list-item-padding-sm;
+      }
+    }
+  }
+}

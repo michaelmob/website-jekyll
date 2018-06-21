@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+// Screen Sizes
+$extra-small-screen:         340px;
+$small-screen:               600px;
+$medium-screen:              1024px;
+
+
+// Base
+$base-font-family:           "Lato", "Arial" !default;
+$base-font-size:             18px !default;
+
+
+// Typography
+$massive-font-size:          5rem !default;
+$huge-font-size:             4rem !default;
+$large-font-size:            3rem !default;
+
+
+// Backgrounds
+$background:                 #222 no-repeat fixed center !default;
+$background-transition:      opacity 1s !default;
+$background-blur-size:       3px;
+$background-filter:          blur($background-blur-size) !default;
+$backgrounds-dir:            "/assets/images/backgrounds";
+$backgrounds:                (
+  desert:                    "#{$backgrounds-dir}/desert.jpg",
+  forest:                    "#{$backgrounds-dir}/forest.jpg",
+  lake:                      "#{$backgrounds-dir}/lake.jpg",
+  road:                      "#{$backgrounds-dir}/road.jpg",
+);
+
+
+// Content
+$content-width:              500px !default;
+$content-margin:             1rem auto !default;
+$content-padding:            2.5rem 4rem !default;
+$content-padding-sm:         0 !default;
+$content-border-radius:      0 !default;
+$content-box-shadow:         0 0 1.5rem rgba(#222, 0.75) !default;
+
+
+$text-color:                 #FFF !default;
+$text-shadow:                0 0 0.25rem #000 !default;
+
+$link-color:                 #0366d6 !default;
+$link-hover-color:           #0099ff !default;
+$link-transition-duration:   200ms !default;
+
+
+
+// Header
+$header-padding:             1rem 0 !default;
+$header-small-padding:       0.5rem 0 !default;
+$header-text-padding:        1rem !default;
+$header-text-margin:         1rem !default;
+$header-font-family:         "Playfair Display", "Source Serif Pro", "serif" !default;
+$header-font-size:           $massive-font-size !default;
+$header-font-size-sm:        $huge-font-size !default;
+$header-font-size-xs:        $large-font-size !default;
+
+
+// List
+$list-margin:                0.75rem !default;
+$list-padding:               0 !default;
+$list-font-family:           $base-font-family !default;
+$list-item-transition:       background 250ms !default;
+$list-item-margin:           0 0.5rem !default;
+$list-item-margin-sm:        0.5rem 0 !default;
+$list-item-padding:          0.75rem 0 !default;
+$list-item-padding-sm:       1.25rem 0 !default;
+$list-item-color:            $text-color !default;
+$list-item-hover-background: rgba(#FFF, 0.25);
+$list-item-font-weight:      bold !default;
+$list-item-font-size:        1.25rem !default;
+
+
+// Imports
+@import url("https://fonts.googleapis.com/css?family=Lato|Playfair+Display");
+@import
+  "mob/base",
+  "mob/content",
+  "mob/background"
+;

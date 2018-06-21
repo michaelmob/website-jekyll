@@ -1,3 +1,0 @@
-## Welcome
-
-See you soon.
