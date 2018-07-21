@@ -1,6 +1,6 @@
 /* Blurred main background */
 body {
-  &::before, /* main::before */ {
+  &::before, main::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -13,17 +13,17 @@ body {
     transition: $background-transition;
   }
 
-  // main::before {
-  //   filter: $background-filter;
-  //   top: $background-blur-size * -1;
-  //   left: $background-blur-size * -1;
-  //   width: (100 + ($background-blur-size / 1px)) * 1%;
-  //   height: (100 + ($background-blur-size / 1px)) * 1%;
+  main::before {
+    filter: $background-filter;
+    top: $background-blur-size * -1;
+    left: $background-blur-size * -1;
+    width: (100 + ($background-blur-size / 1px)) * 1%;
+    height: (100 + ($background-blur-size / 1px)) * 1%;
 
-  //   @media screen and (max-width: $medium-screen) {
-  //     background: none !important;
-  //   }
-  // }
+    @media screen and (max-width: $medium-screen) {
+      background: none !important;
+    }
+  }
 }
 
 
