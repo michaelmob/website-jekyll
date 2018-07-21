@@ -6,6 +6,6 @@ permalink: index.html
 ---
 # Mike Mob
 
-<!-- * [Blog](/blog.html) -->
+* [Blog](/blog.html)
 * [GitHub](https://github.com/thetarkus/)
 * <a id="email" href="mailto:mike@mikemob.com" title="mike@mikemob.com">E-mail</a>
