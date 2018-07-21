@@ -1,11 +1,11 @@
-main, .box {
+main {
   position: relative;
   margin: $content-margin;
   padding: $content-padding;
   overflow: hidden;
   color: $text-color;
-  border-radius: $content-border-radius;
-  box-shadow: $content-box-shadow;
+  // border-radius: $content-border-radius;
+  // box-shadow: $content-box-shadow;
   text-shadow: $text-shadow;
 
   @media screen and (max-width: $medium-screen) {

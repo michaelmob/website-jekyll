@@ -1,6 +1,5 @@
-/* Blurred main background */
 body {
-  &::before, main::before {
+  &::before, /*main::before*/ {
     position: absolute;
     top: 0;
     left: 0;
@@ -13,7 +12,7 @@ body {
     transition: $background-transition;
   }
 
-  main::before {
+  /*main::before {
     filter: $background-filter;
     top: $background-blur-size * -1;
     left: $background-blur-size * -1;
@@ -23,12 +22,12 @@ body {
     @media screen and (max-width: $medium-screen) {
       background: none !important;
     }
-  }
+  }*/
 }
 
 
 @each $name, $url in $backgrounds {
-  .#{$name}::before, .#{$name} main::before {
+  .#{$name}::before, /*.#{$name} main::before*/ {
     background-image: url($url);
   }
 }

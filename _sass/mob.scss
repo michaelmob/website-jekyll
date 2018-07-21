@@ -25,10 +25,8 @@ $background-blur-size:       3px;
 $background-filter:          blur($background-blur-size) !default;
 $backgrounds-dir:            "/assets/images/backgrounds";
 $backgrounds:                (
-  desert:                    "#{$backgrounds-dir}/desert.jpg",
-  forest:                    "#{$backgrounds-dir}/forest.jpg",
-  lake:                      "#{$backgrounds-dir}/lake.jpg",
-  road:                      "#{$backgrounds-dir}/road.jpg",
+  "anton-repponen": "#{$backgrounds-dir}/anton-repponen-103080-unsplash.jpg",
+  "ivana-cajina":   "#{$backgrounds-dir}/ivana-cajina-403437-unsplash.jpg",
 );
 
 
@@ -42,7 +40,7 @@ $content-box-shadow:         0 0 1.5rem rgba(#222, 0.75) !default;
 
 
 $text-color:                 #FFF !default;
-$text-shadow:                0 0 0.25rem #000 !default;
+$text-shadow:                0 0 0.5rem #000 !default;
 
 $link-color:                 #0366d6 !default;
 $link-hover-color:           #0099ff !default;

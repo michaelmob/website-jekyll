@@ -1,9 +1,7 @@
 const assets = "/assets/images/backgrounds";
 const backgrounds = {
-  desert: `${assets}/desert.jpg`,
-  forest: `${assets}/forest.jpg`,
-  lake: `${assets}/lake.jpg`,
-  road: `${assets}/road.jpg`,
+  "anton-repponen": `${assets}/anton-repponen-103080-unsplash.jpg`,
+  "ivana-cajina": `${assets}/ivana-cajina-403437-unsplash.jpg`,
 };
 
 
